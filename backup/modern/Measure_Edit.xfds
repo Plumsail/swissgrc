@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Form JavaScript="window.fd = fd;&#xD;&#xA;&#xD;&#xA;fd.spForm.useFallback = true;&#xD;&#xA;&#xD;&#xA;function configureLookupFiltration(fieldName) {&#xD;&#xA;    fd.field(fieldName).filter = function(filter) {&#xD;&#xA;        var search = encodeURIComponent(filter);&#xD;&#xA;        return filter&#xD;&#xA;            ? `substringof('${search}', Title) or substringof('${search}', grcItemNumber)`&#xD;&#xA;            : '';&#xD;&#xA;    }&#xD;&#xA;    fd.field(fieldName).useCustomFilterOnly = true;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;if (fd.formType !== 'Display') {&#xD;&#xA;    fd.spRendered(() =&gt; {&#xD;&#xA;        configureLookupFiltration('_grcRisks');&#xD;&#xA;        configureLookupFiltration('_grcControlActivities');&#xD;&#xA;        configureLookupFiltration('_grcAudits');&#xD;&#xA;        configureLookupFiltration('_grcFindings');&#xD;&#xA;        configureLookupFiltration('_grcAssets');&#xD;&#xA;    })&#xD;&#xA;}" Css=".fd-form .title-field .form-control {&#xD;&#xA;    border: 1px solid #ced4da;&#xD;&#xA;}&#xD;&#xA;/*&#xD;&#xA;.ms-Layer .fd-form .form-control {&#xD;&#xA;    border: 1px solid #ced4da;&#xD;&#xA;}*/">
+  <PCView>
+    <Layout Version="1.0.2.0">
+      <Grid Stacked="Small" DefaultChildWidth="6">
+        <Row>
+          <Cell Width="12" Alignment="Stretch" Offset="0">
+            <TabControl TabStripPlacement="Top" InternalName="Tab1">
+              <Tab Header="General">
+                <Grid Stacked="Small" DefaultChildWidth="12">
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="No." TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Text" InternalName="grcItemNumber" ReadOnly="True" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Title" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" CssClass="title-field" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Text" InternalName="Title" ReadOnly="False" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Description" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="MultiLinePlainText" InternalName="Body" ReadOnly="False" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Category" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="DropDown" InternalName="grcMeasureCategory" ReadOnly="False" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="4" Alignment="Stretch" Offset="0">
+                      <SPField Title="OU 1" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Lookup" InternalName="_grcOU1" ReadOnly="False" Operator="StartsWith" AddNew="False" ExtraFields="[&quot;ID&quot;]" ExpandFields="[]" />
+                    </Cell>
+                    <Cell Width="4" Alignment="Stretch" Offset="0">
+                      <SPField Title="OU 2" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Lookup" InternalName="_grcOU2" ReadOnly="False" Operator="StartsWith" AddNew="False" ExtraFields="[&quot;ID&quot;]" ExpandFields="[]" DependsOn="{&quot;Type&quot;:2,&quot;InternalName&quot;:&quot;_grcOU1&quot;,&quot;EntityPropertyName&quot;:&quot;OData__grcOU1&quot;,&quot;Title&quot;:&quot;OU 1&quot;}" DependsOnPath="{&quot;InternalName&quot;:&quot;ID&quot;,&quot;EntityPropertyName&quot;:&quot;ID&quot;,&quot;Title&quot;:&quot;ID&quot;}" MatchTo="{&quot;Type&quot;:2,&quot;InternalName&quot;:&quot;grcOU1&quot;,&quot;EntityPropertyName&quot;:&quot;grcOU1&quot;,&quot;Title&quot;:&quot;OU 1&quot;}" MatchToPath="{&quot;Type&quot;:0,&quot;InternalName&quot;:&quot;ID&quot;,&quot;EntityPropertyName&quot;:&quot;ID&quot;,&quot;Title&quot;:&quot;ID&quot;}" FilterConfig="{&quot;DependsOn&quot;:&quot;_grcOU1&quot;,&quot;DependsOnType&quot;:2,&quot;DependsOnPath&quot;:&quot;ID&quot;,&quot;MatchTo&quot;:&quot;grcOU1&quot;,&quot;MatchToPath&quot;:&quot;ID&quot;,&quot;MatchToValueType&quot;:0}" />
+                    </Cell>
+                    <Cell Width="4" Alignment="Stretch" Offset="0">
+                      <SPField Title="OU 3" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Lookup" InternalName="_grcOU3" ReadOnly="False" Operator="StartsWith" AddNew="False" ExtraFields="[]" ExpandFields="[]" DependsOn="{&quot;Type&quot;:2,&quot;InternalName&quot;:&quot;_grcOU2&quot;,&quot;EntityPropertyName&quot;:&quot;OData__grcOU2&quot;,&quot;Title&quot;:&quot;OU 2&quot;}" DependsOnPath="{&quot;InternalName&quot;:&quot;ID&quot;,&quot;EntityPropertyName&quot;:&quot;ID&quot;,&quot;Title&quot;:&quot;ID&quot;}" MatchTo="{&quot;Type&quot;:2,&quot;InternalName&quot;:&quot;grcOU2&quot;,&quot;EntityPropertyName&quot;:&quot;grcOU2&quot;,&quot;Title&quot;:&quot;OU 2&quot;}" MatchToPath="{&quot;Type&quot;:0,&quot;InternalName&quot;:&quot;ID&quot;,&quot;EntityPropertyName&quot;:&quot;ID&quot;,&quot;Title&quot;:&quot;ID&quot;}" FilterConfig="{&quot;DependsOn&quot;:&quot;_grcOU2&quot;,&quot;DependsOnType&quot;:2,&quot;DependsOnPath&quot;:&quot;ID&quot;,&quot;MatchTo&quot;:&quot;grcOU2&quot;,&quot;MatchToPath&quot;:&quot;ID&quot;,&quot;MatchToValueType&quot;:0}" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Assigned To" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="UserMulti" InternalName="AssignedTo" ReadOnly="False" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Priority" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="DropDown" InternalName="Priority" ReadOnly="False" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="6" Alignment="Stretch" Offset="0">
+                      <SPField Title="Start Date" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Date" InternalName="StartDate" ReadOnly="False" />
+                    </Cell>
+                    <Cell Width="6" Alignment="Stretch" Offset="0">
+                      <SPField Title="Due Date" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Date" InternalName="DueDate" ReadOnly="False" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="6" Alignment="Stretch" Offset="0">
+                      <SPField Title="Status" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="DropDown" InternalName="Status" ReadOnly="False" />
+                    </Cell>
+                    <Cell Width="6" Alignment="Stretch" Offset="0">
+                      <SPField Title="% Complete" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Number" InternalName="PercentComplete" ReadOnly="False" Decimals="5" Format="0.#####" Step="1" Min="NaN" Max="NaN" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Comments" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="MultiLinePlainText" InternalName="grcComments" ReadOnly="False" />
+                    </Cell>
+                  </Row>
+                </Grid>
+              </Tab>
+              <Tab Header="References">
+                <Grid Stacked="Small" DefaultChildWidth="12">
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Risks" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="LookupMulti" InternalName="_grcRisks" ReadOnly="False" Operator="Contains" AddNew="True" ExtraFields="[]" ExpandFields="[]" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Control Activities" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="LookupMulti" InternalName="_grcControlActivities" ReadOnly="False" Operator="Contains" AddNew="True" ExtraFields="[]" ExpandFields="[]" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Audits" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="LookupMulti" InternalName="_grcAudits" ReadOnly="False" Operator="Contains" AddNew="True" ExtraFields="[]" ExpandFields="[]" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Findings" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="LookupMulti" InternalName="_grcFindings" ReadOnly="False" Operator="Contains" AddNew="True" ExtraFields="[]" ExpandFields="[]" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Assets" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="LookupMulti" InternalName="_grcAssets" ReadOnly="False" Operator="Contains" AddNew="True" ExtraFields="[]" ExpandFields="[]" />
+                    </Cell>
+                  </Row>
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Comments" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Vertical" TitleVisibility="True" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="MultiLinePlainText" InternalName="grcCommentsRelations" ReadOnly="False" />
+                    </Cell>
+                  </Row>
+                </Grid>
+              </Tab>
+              <Tab Header="Attachments">
+                <Grid Stacked="Small" DefaultChildWidth="12">
+                  <Row>
+                    <Cell Width="12" Alignment="Stretch" Offset="0">
+                      <SPField Title="Attachments" TitleFontStyle="Normal" TitleFontWeight="Semibold" Orientation="Horizontal" TitleVisibility="False" TitleWrapping="True" ControlFontStyle="Normal" ControlFontWeight="Normal" Type="Attachments" InternalName="Attachments" ReadOnly="False" />
+                    </Cell>
+                  </Row>
+                </Grid>
+              </Tab>
+            </TabControl>
+          </Cell>
+        </Row>
+      </Grid>
+    </Layout>
+  </PCView>
+</Form>

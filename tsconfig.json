@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "target": "ESNext",
+        "typeRoots": ["./node_modules/@types", "./src/types"],
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "allowJs": true
+    },
+    "exclude": ["node_modules"]
+}

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormsDesigner JavaScript="$('#fd_tabcontrol-0').tabs('option', 'active', 0);&#xD;&#xA;SwissGRC.Branding.PlumsailForm.init();" Css="#DeltaPlaceHolderMain {&#xD;&#xA;&#x9;padding: 0px;&#xD;&#xA;}" IsCustomCommandsPanel="true" HideRibbonTab="true" HidePageRibbonTab="false" ShowToolbar="false" ExportToPdfButtonEnabled="false" PrintButtonEnabled="false" RedirectOnSubmitUrl="" RedirectOnCancelUrl="" ListId="f2b144b7-cc45-491c-a49d-bb65aadc4972" ContentTypeId="0x0108005BF19ACFB6F1A840A8F9A8AA2F64801C00768533B6BD133A44B692AB311F24BFD9" FormType="Display">
+  <Layout Version="1.0.0.0">
+    <List Orientation="Vertical" CssClass="" Style="width:100%;">
+      <Table Width="800" CssClass="" Style="">
+        <ColumnDefinitions>
+          <ColumnDefinition Width="100%" />
+        </ColumnDefinitions>
+        <RowDefinitions>
+          <RowDefinition Height="98.0392156722499%" />
+          <RowDefinition Height="1.96078432775011%" />
+        </RowDefinitions>
+        <Cells>
+          <Cell Row="0" Column="0" Style="" CssClass="" Padding="5px 5px 5px 5px">
+            <TabControl TabStripPlacement="Top">
+              <Tab Header="General">
+                <List Orientation="Vertical" CssClass="" Style="width:100%;">
+                  <Field Id="34a1631e-1e07-47d9-8427-9c515b069338" InternalName="grcItemNumber" Title="No." TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="True" CssClass="" Style="" Asterisk="False" Type="Text" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Field Id="fa564e0f-0c70-4ab9-b863-0177e6ddd247" InternalName="Title" Title="Title" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="True" Type="Text" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Field Id="7662cd2c-f069-4dba-9e35-082cf976e170" InternalName="Body" Title="Description" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="MultiLinePlainText" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Field Id="5bb16e07-cee1-4c1b-8e74-efee4954838f" InternalName="grcMeasureCategory" Title="Category" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="DropDown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Table Width="100%" CssClass="" Style="">
+                    <ColumnDefinitions>
+                      <ColumnDefinition Width="33%" />
+                      <ColumnDefinition Width="33%" />
+                      <ColumnDefinition Width="33%" />
+                    </ColumnDefinitions>
+                    <RowDefinitions>
+                      <RowDefinition Height="100%" />
+                    </RowDefinitions>
+                    <Cells>
+                      <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 5px 0px 0px">
+                        <Table Width="100%" CssClass="" Style="">
+                          <ColumnDefinitions>
+                            <ColumnDefinition Width="100%" />
+                          </ColumnDefinitions>
+                          <RowDefinitions>
+                            <RowDefinition Height="100%" />
+                          </RowDefinitions>
+                          <Cells>
+                            <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 5px 0px 0px">
+                              <Field Id="885bdc91-94bf-4a19-83b8-57b0f019089c" InternalName="grcOU1" Title="OU 1" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Unknown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                            </Cell>
+                          </Cells>
+                        </Table>
+                      </Cell>
+                      <Cell Row="0" Column="1" Style="" CssClass="" Padding="0px 5px 0px 5px">
+                        <Table Width="100%" CssClass="" Style="">
+                          <ColumnDefinitions>
+                            <ColumnDefinition Width="100%" />
+                          </ColumnDefinitions>
+                          <RowDefinitions>
+                            <RowDefinition Height="100%" />
+                          </RowDefinitions>
+                          <Cells>
+                            <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 5px 0px 5px">
+                              <Field Id="3919def4-c4c4-4fc0-a733-309b499ff824" InternalName="grcOU2" Title="OU 2" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Unknown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                            </Cell>
+                          </Cells>
+                        </Table>
+                      </Cell>
+                      <Cell Row="0" Column="2" Style="" CssClass="" Padding="0px 0px 0px 5px">
+                        <Table Width="100%" CssClass="" Style="">
+                          <ColumnDefinitions>
+                            <ColumnDefinition Width="100%" />
+                          </ColumnDefinitions>
+                          <RowDefinitions>
+                            <RowDefinition Height="100%" />
+                          </RowDefinitions>
+                          <Cells>
+                            <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 0px 0px 5px">
+                              <Field Id="85874d73-8b39-4dcd-bec5-a4a1360c034f" InternalName="grcOU3" Title="OU 3" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Unknown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                            </Cell>
+                          </Cells>
+                        </Table>
+                      </Cell>
+                    </Cells>
+                  </Table>
+                  <Field Id="53101f38-dd2e-458c-b245-0c236cc13d1a" InternalName="AssignedTo" Title="Assigned To" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="User" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="ClientPeoplePicker" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Field Id="a8eb573e-9e11-481a-a8c9-1104a54b2fbd" InternalName="Priority" Title="Priority" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="DropDown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Table Width="100%" CssClass="" Style="">
+                    <ColumnDefinitions>
+                      <ColumnDefinition Width="50%" />
+                      <ColumnDefinition Width="50%" />
+                    </ColumnDefinitions>
+                    <RowDefinitions>
+                      <RowDefinition Height="100%" />
+                    </RowDefinitions>
+                    <Cells>
+                      <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 5px 0px 0px">
+                        <Table Width="100%" CssClass="" Style="">
+                          <ColumnDefinitions>
+                            <ColumnDefinition Width="100%" />
+                          </ColumnDefinitions>
+                          <RowDefinitions>
+                            <RowDefinition Height="100%" />
+                          </RowDefinitions>
+                          <Cells>
+                            <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 5px 0px 0px">
+                              <Field Id="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" InternalName="StartDate" Title="Start Date" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Date" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                            </Cell>
+                          </Cells>
+                        </Table>
+                      </Cell>
+                      <Cell Row="0" Column="1" Style="" CssClass="" Padding="0px 0px 0px 5px">
+                        <Table Width="100%" CssClass="" Style="">
+                          <ColumnDefinitions>
+                            <ColumnDefinition Width="100%" />
+                          </ColumnDefinitions>
+                          <RowDefinitions>
+                            <RowDefinition Height="100%" />
+                          </RowDefinitions>
+                          <Cells>
+                            <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 0px 0px 5px">
+                              <Field Id="cd21b4c2-6841-4f9e-a23a-738a65f99889" InternalName="DueDate" Title="Due Date" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Date" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                            </Cell>
+                          </Cells>
+                        </Table>
+                      </Cell>
+                    </Cells>
+                  </Table>
+                  <Table Width="100%" CssClass="" Style="">
+                    <ColumnDefinitions>
+                      <ColumnDefinition Width="50%" />
+                      <ColumnDefinition Width="50%" />
+                    </ColumnDefinitions>
+                    <RowDefinitions>
+                      <RowDefinition Height="100%" />
+                    </RowDefinitions>
+                    <Cells>
+                      <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 5px 0px 0px">
+                        <Table Width="100%" CssClass="" Style="">
+                          <ColumnDefinitions>
+                            <ColumnDefinition Width="100%" />
+                          </ColumnDefinitions>
+                          <RowDefinitions>
+                            <RowDefinition Height="100%" />
+                          </RowDefinitions>
+                          <Cells>
+                            <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 5px 0px 0px">
+                              <Field Id="c15b34c3-ce7d-490a-b133-3f4de8801b76" InternalName="Status" Title="Status" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="DropDown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                            </Cell>
+                          </Cells>
+                        </Table>
+                      </Cell>
+                      <Cell Row="0" Column="1" Style="" CssClass="" Padding="0px 0px 0px 5px">
+                        <Table Width="100%" CssClass="" Style="">
+                          <ColumnDefinitions>
+                            <ColumnDefinition Width="100%" />
+                          </ColumnDefinitions>
+                          <RowDefinitions>
+                            <RowDefinition Height="100%" />
+                          </RowDefinitions>
+                          <Cells>
+                            <Cell Row="0" Column="0" Style="" CssClass="" Padding="0px 0px 0px 5px">
+                              <Field Id="d2311440-1ed6-46ea-b46d-daa643dc3886" InternalName="PercentComplete" Title="% Complete" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Text" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                            </Cell>
+                          </Cells>
+                        </Table>
+                      </Cell>
+                    </Cells>
+                  </Table>
+                  <Field Id="91b1de01-ab59-4973-8c49-37ba7c5048a6" InternalName="grcComments" Title="Comments" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="MultiLinePlainText" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                </List>
+              </Tab>
+              <Tab Header="References">
+                <List Orientation="Vertical" CssClass="" Style="width:100%;">
+                  <Field Id="f3c2c493-7f7f-401d-b27f-0243d68e47bc" InternalName="grcRisks" Title="Risks" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Unknown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Field Id="56e62627-7d1e-4174-84a3-290277c7a07a" InternalName="grcControlActivities" Title="Control Activities" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Unknown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Field Id="afc04ca0-f58b-40cf-84df-3248c2f05f51" InternalName="grcAudits" Title="Audits" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Unknown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Field Id="b35524f8-8222-4017-b15a-ae4e39b26723" InternalName="grcFindings" Title="Findings" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Unknown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Field Id="161bfc4b-a551-4c99-8c3f-943e17b59908" InternalName="grcAssets" Title="Assets" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Unknown" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                  <Field Id="c6216648-f92d-4916-a263-e60b5e75ae19" InternalName="grcCommentsRelations" Title="Comments" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="MultiLinePlainText" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                </List>
+              </Tab>
+              <Tab Header="Attachments">
+                <List Orientation="Vertical" CssClass="" Style="width:100%;">
+                  <Field Id="67df98f4-9dec-48ff-a553-29bece9c5bf4" InternalName="Attachments" Title="Attachments" TitleFontStyle="Normal" TitleFontWeight="Normal" TitleFontSize="" Orientation="Vertical" TitleVisibility="Visible" TitleWrapping="NoWrap" TitleWidth="150" ReadOnly="False" CssClass="" Style="" Asterisk="False" Type="Attachments" Width="" ControlFontStyle="Normal" ControlFontWeight="Normal" ControlFontSize="" Template="Default" CustomHtml="&lt;asp:HiddenField runat=&quot;server&quot; ID=&quot;{{FieldName}}Field&quot; Value=&quot;{@{{FieldName}}}&quot; __designer:bind=&quot;{{DataBinding}}&quot; /&gt;" CustomJavaScript="fd.field(fieldName).control()._el().append(&quot;&lt;p&gt;Custom rendering&lt;/p&gt;&quot;);" />
+                </List>
+              </Tab>
+            </TabControl>
+          </Cell>
+          <Cell Row="1" Column="0" Style="" CssClass="" Padding="5px 5px 5px 5px">
+            <Table Width="100%" CssClass="fd_commands" Style="width:100%;">
+              <ColumnDefinitions>
+                <ColumnDefinition Width="100%" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="80" />
+              </ColumnDefinitions>
+              <RowDefinitions>
+                <RowDefinition Height="100%" />
+              </RowDefinitions>
+              <Cells>
+                <Cell Row="0" Column="0" Style="" CssClass="ms-descriptiontext" Padding="5px 5px 5px 5px">
+                  <TextBlock Style="" CssClass="" Text="Version: [_UIVersionString] &#xD;Created at [Created] by [Author]&#xD;Last modified at [Modified] by [Editor]" Wrapping="NoWrap" Width="300" TextType="Text" />
+                </Cell>
+                <Cell Row="0" Column="1" Style="padding-left: 10px;" CssClass="" Padding="5px 5px 5px 5px">
+                  <SaveButton Style="" CssClass="" OnClick="" Text="Save" Width="80" />
+                </Cell>
+                <Cell Row="0" Column="2" Style="padding-left: 10px;" CssClass="" Padding="5px 5px 5px 5px">
+                  <CloseButton Style="" CssClass="" OnClick="" Text="Cancel" Width="80" />
+                </Cell>
+              </Cells>
+            </Table>
+          </Cell>
+        </Cells>
+      </Table>
+    </List>
+  </Layout>
+</FormsDesigner>

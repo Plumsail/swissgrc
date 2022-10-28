@@ -1,10 +1,9 @@
 import ScriptLoader from './utils/scriptLoader';
-import combinePaths from './utils/combinePaths';
 
 const loadPanel = new Promise<any>((resolve, reject) => {
     ExecuteOrDelayUntilScriptLoaded(async () => {
         try {
-            const Plumsail = await ScriptLoader.loadScript('/' + combinePaths(_spPageContextInfo.webServerRelativeUrl, process.env.SPFormPanelUrl), {
+            const Plumsail = await ScriptLoader.loadScript(process.env.SPFormPanelUrl, {
                 globalExportsName: 'Plumsail'
             });
 
